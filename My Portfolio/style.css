@@ -1,0 +1,155 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Full height for background */
+    background-image: url('Image/windows-12-3840x2160-tree-moon-night-mountains-25492.jpg'); /* Background Image */
+    background-size: cover; /* Cover the whole area */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+}
+
+/* Additional styles remain the same */
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero {
+    height: 100vh; /* Full viewport height */
+    background-image: url('~/Image/windows-12-3840x2160-tree-moon-night-mountains-25492.jpg'); /* Background Image */
+    background-size: cover; /* Cover the entire hero section */
+    background-position: center; /* Center the image */
+    position: relative;
+    color: white; /* Text color */
+    filter: brightness(0.9); /* Slightly dim for readability */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero .text-white {
+    z-index: 2;
+    position: relative;
+}
+
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+.about-image {
+    margin-bottom: 20px; /* Add spacing below the image */
+}
+
+.about-text {
+    padding-left: 20px; /* Optional: Add padding to the text */
+}
+
+img {
+    height: 200px; /* Maintain the height */
+    max-width: 100%; /* Ensure responsiveness */
+}
+.list-group-item i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.2rem; /* Adjust icon size */
+}
+/*Footer */
+footer {
+    position: relative; /* Allows for potential absolute positioning of children */
+}
+
+.social-icons a {
+    font-size: 1.5rem; /* Increase icon size */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.social-icons a:hover {
+    color: #1e90ff; /* Change color on hover */
+}
+
+/* Optional: Add a subtle gradient or background image */
+footer {
+    background: linear-gradient(to right, #343a40, #495057);
+}
+
+/*Skill*/
+.skill-list {
+    max-height: 200px; /* Set the desired height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Optional: Style for the scrollbar */
+.skill-list::-webkit-scrollbar {
+    width: 8px; /* Adjust the scrollbar width */
+}
+
+.skill-list::-webkit-scrollbar-thumb {
+    background: #007bff; /* Color of the scrollbar */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.skill-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+/* Transparent Background for Cards */
+.card {
+    background-color:#ffffff6e;/* Semi-transparent background */
+    border: none; /* Optional: Remove the border */
+    transition: transform 0.3s ease; /* Optional: Add a smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Optional: Scale up on hover */
+}
+
+.card-body {
+    color: rgb(154, 54, 54); /* Ensures text is visible on a transparent background */
+}
+
+.card-title, .card-text {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for better readability */
+}
+
+
+.btn-outline-primary {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-primary:hover {
+    background-color: white;
+    color: #007bff;
+}
+.bg-trans{
+    background-color:#ffffff6e;
+}
+
+
+
