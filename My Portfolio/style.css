@@ -151,5 +151,12 @@ footer {
     background-color:#ffffff6e;
 }
 
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    transition: background-color 0.3s ease;
+}
+
+
 
 
