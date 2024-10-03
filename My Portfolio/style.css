@@ -76,22 +76,14 @@ footer {
     }
 }
 
-.about-image {
-    margin-bottom: 20px;
-    /* Add spacing below the image */
-}
+
 
 .about-text {
     padding-left: 20px;
     /* Optional: Add padding to the text */
 }
 
-img {
-    height: 200px;
-    /* Maintain the height */
-    max-width: 100%;
-    /* Ensure responsiveness */
-}
+
 
 .list-group-item i {
     margin-right: 10px;
@@ -198,9 +190,6 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.manualbgColor {
-    background-color: rgb(238 240 243 / 55%) !important;
-}
 
 .scrolling-text {
     scrollbar-width: thin;
@@ -234,4 +223,31 @@ footer {
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
+}
+
+/*About Css*/
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.manualbgColor {
+    background-color: #f8f9fa;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
