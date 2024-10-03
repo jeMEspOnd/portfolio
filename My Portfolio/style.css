@@ -201,3 +201,37 @@ footer {
 .manualbgColor {
     background-color: rgb(238 240 243 / 55%) !important;
 }
+
+.scrolling-text {
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #007bff #f0f0f0;
+    /* For Firefox */
+}
+
+.scrolling-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrolling-text::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+.scrolling-text::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.form-control {
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
