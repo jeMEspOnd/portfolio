@@ -1,253 +1,200 @@
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    /* Modern font */
     margin: 0;
-    /* Remove default margin */
     padding: 0;
-    /* Remove default padding */
-    height: 100vh;
-    /* Full height for background */
-    background-image: url('Image/windows-12-3840x2160-tree-moon-night-mountains-25492.jpg');
-    /* Background Image */
-    background-size: cover;
-    /* Cover the whole area */
-    background-position: center;
-    /* Center the image */
-    background-attachment: fixed;
-    /* Keep the image fixed while scrolling */
+    background-color: #f3f4f6;
+    color: #333;
 }
 
-/* Additional styles remain the same */
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.85);
+    /* Transparent black navbar */
+}
 
+.navbar-nav .nav-link {
+    color: #f8f9fa;
+    /* White text */
+    transition: color 0.3s ease;
+}
 
-.navbar-brand {
-    font-size: 1.5rem;
+.navbar-nav .nav-link:hover {
+    color: #1e90ff;
+    /* Hover effect with blue transition */
+}
+
+.navbar-nav .nav-link.active {
+    color: #1e90ff;
+    /* Active section highlighting */
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
     height: 100vh;
-    /* Full viewport height */
-    background-image: url('~/Image/windows-12-3840x2160-tree-moon-night-mountains-25492.jpg');
-    /* Background Image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Image/windows-12-3840x2160-tree-moon-night-mountains-25492.jpg');
     background-size: cover;
-    /* Cover the entire hero section */
     background-position: center;
-    /* Center the image */
-    position: relative;
     color: white;
-    /* Text color */
-    filter: brightness(0.9);
-    /* Slightly dim for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    /* Text shadow for better readability */
 }
 
-.hero .text-white {
-    z-index: 2;
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+#about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.about-image img {
+    transition: transform 0.5s ease;
+    /* Smooth hover effect */
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Cards (Projects Section) */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent */
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Hover lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.scrolling-text {
+    max-height: 80px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff transparent;
+}
+
+/* Skill Section */
+/* Skills Section */
+#skills {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.progress {
+    background-color: #e9ecef;
+    height: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
     position: relative;
 }
 
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+.progress-bar {
+    height: 12px;
+    border-radius: 6px;
+    transition: width 1s ease;
 }
 
-footer {
-    margin-top: 20px;
+/* Icons */
+.skill-card i {
+    color: #007bff;
+}
+
+.skill-card i.fa-angular {
+    color: #dd0031;
+}
+
+.skill-card i.fa-html5 {
+    color: #f06529;
+}
+
+.skill-card i.fa-css3-alt {
+    color: #2965f1;
+}
+
+.skill-card i.fa-js {
+    color: #f7df1e;
+}
+
+.skill-card i.fa-code {
+    color: #6c757d;
+}
+
+.skill-card i.fa-bootstrap {
+    color: #563d7c;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
+    .skill-title {
+        font-size: 1.1rem;
     }
 
-    .hero p {
-        font-size: 1.2rem;
+    .skill-card {
+        margin-bottom: 30px;
     }
 }
 
 
-
-.about-text {
-    padding-left: 20px;
-    /* Optional: Add padding to the text */
-}
-
-
-
-.list-group-item i {
-    margin-right: 10px;
-    /* Space between icon and text */
-    font-size: 1.2rem;
-    /* Adjust icon size */
-}
-
-/*Footer */
+/* Footer */
 footer {
-    position: relative;
-    /* Allows for potential absolute positioning of children */
+    background: linear-gradient(to right, #343a40, #495057);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
 }
 
 .social-icons a {
     font-size: 1.5rem;
-    /* Increase icon size */
-    transition: color 0.3s;
-    /* Smooth color transition on hover */
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
     color: #1e90ff;
-    /* Change color on hover */
-}
-
-/* Optional: Add a subtle gradient or background image */
-footer {
-    background: linear-gradient(to right, #343a40, #495057);
-}
-
-/*Skill*/
-.skill-list {
-    max-height: 200px;
-    /* Set the desired height */
-    overflow-y: auto;
-    /* Enable vertical scrolling */
-    overflow-x: hidden;
-    /* Prevent horizontal scrolling */
-}
-
-/* Optional: Style for the scrollbar */
-.skill-list::-webkit-scrollbar {
-    width: 8px;
-    /* Adjust the scrollbar width */
-}
-
-.skill-list::-webkit-scrollbar-thumb {
-    background: #007bff;
-    /* Color of the scrollbar */
-    border-radius: 10px;
-    /* Rounded corners */
-}
-
-.skill-list::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    /* Background of the scrollbar track */
-}
-
-/* Transparent Background for Cards */
-.card {
-    background-color: #ffffff6e;
-    /* Semi-transparent background */
-    border: none;
-    /* Optional: Remove the border */
-    transition: transform 0.3s ease;
-    /* Optional: Add a smooth hover effect */
-}
-
-.card:hover {
-    transform: scale(1.05);
-    /* Optional: Scale up on hover */
-}
-
-.card-body {
-    color: rgb(154, 54, 54);
-    /* Ensures text is visible on a transparent background */
-}
-
-.card-title,
-.card-text {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    /* Optional: Add text shadow for better readability */
-}
-
-
-.btn-outline-primary {
-    border-color: white;
-    color: white;
-}
-
-.btn-outline-primary:hover {
-    background-color: white;
-    color: #007bff;
-}
-
-.bg-trans {
-    background-color: #ffffff6e;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
-    transition: background-color 0.3s ease;
-}
-
-
-.scrolling-text {
-    scrollbar-width: thin;
-    /* For Firefox */
-    scrollbar-color: #007bff #f0f0f0;
-    /* For Firefox */
-}
-
-.scrolling-text::-webkit-scrollbar {
-    width: 8px;
-}
-
-.scrolling-text::-webkit-scrollbar-thumb {
-    background-color: #007bff;
-    border-radius: 4px;
-}
-
-.scrolling-text::-webkit-scrollbar-track {
-    background: #f0f0f0;
-}
-
-.form-control {
-    transition: border-color 0.3s ease-in-out;
-}
-
-.form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-/*About Css*/
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.manualbgColor {
-    background-color: #f8f9fa;
-}
-
-.about-image img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+    /* Hover color change */
 }
