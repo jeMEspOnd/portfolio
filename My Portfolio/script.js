@@ -62,4 +62,53 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/*Skills animation*/
+window.addEventListener('load', function () {
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    function getColor(percent) {
+        // Calculate color based on the percentage
+        if (percent <= 50) {
+            // Red to Yellow
+            const red = 255;
+            const green = Math.round(255 * (percent / 50)); // Interpolate from 0 to 255
+            return `rgb(${red}, ${green}, 0)`; // RGB color
+        } else {
+            // Yellow to Green
+            const red = Math.round(255 * (1 - (percent - 50) / 50)); // Interpolate from 255 to 0
+            const green = 255; // Stays 255
+            return `rgb(${red}, ${green}, 0)`; // RGB color
+        }
+    }
+
+    progressBars.forEach(function (bar) {
+        const targetWidth = bar.getAttribute('aria-valuenow');
+        bar.style.width = '0%'; // Start at 0%
+        bar.textContent = '0%'; // Start text at 0%
+
+        // Animate the progress bar
+        const interval = setInterval(() => {
+            let currentWidth = parseInt(bar.style.width);
+            if (currentWidth < targetWidth) {
+                currentWidth++;
+                bar.style.width = currentWidth + '%';
+                bar.textContent = currentWidth + '%'; // Update text to current width
+
+                // Set the background color based on current width
+                bar.style.backgroundColor = getColor(currentWidth);
+            } else {
+                clearInterval(interval); // Stop the interval when the target width is reached
+                bar.textContent = targetWidth + '%'; // Ensure final text matches the target width
+            }
+        }, 50); // Adjust the speed of the animation here
+    });
+});
+
+
+
+
+
+
+
+
 
