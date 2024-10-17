@@ -9,7 +9,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
     // Initialize Mailgun with your API key and domain
     const mailgun = require('mailgun-js');
-    const mg = mailgun({ apiKey: '842e7f85bcf94a49506902faa9ee5455-5dcb5e36-bc4613bf', domain: 'YOUR_DOMAIN' }); // Replace YOUR_DOMAIN
+    const mg = mailgun({ apiKey: '842e7f85bcf94a49506902faa9ee5455-5dcb5e36-bc4613bf', domain: 'sandbox738931235237455cacbafdc4fa909326.mailgun.org' }); // Replace YOUR_DOMAIN
 
     // Prepare data for sending OTP email
     const data = {
