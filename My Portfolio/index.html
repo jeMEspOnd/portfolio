@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-
+    <link rel="stylesheet" href="scrollImage.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -306,12 +306,12 @@
     </section>
 
     <!-- Technical Expertise Section -->
-    <section id="technical-expertise" class="technical-expertise">
+    <section id="technical-expertise" class="py-5 bg-light">
         <div class="container">
-            <h2>Technical Expertise</h2>
-            <div class="expertise-grid">
+            <h2 class="text-center">Technical Expertise</h2>
+            <div class="row">
                 <!-- Front-End Development -->
-                <div class="expertise-item" data-target="#modal-front-end">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 expertise-item" data-target="#modal-front-end">
                     <div class="icon">
                         <i class="fab fa-angular"></i>
                     </div>
@@ -320,7 +320,7 @@
                 </div>
 
                 <!-- Back-End Development -->
-                <div class="expertise-item" data-target="#modal-back-end">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 expertise-item" data-target="#modal-back-end">
                     <div class="icon">
                         <img src="Image/Visual-Studio-Logo-2019.png" height="50px" width="80px" alt="VS Code Logo"
                             class="vscode-icon">
@@ -330,7 +330,7 @@
                 </div>
 
                 <!-- Database -->
-                <div class="expertise-item" data-target="#modal-database">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 expertise-item" data-target="#modal-database">
                     <div class="icon">
                         <i class="fas fa-database"></i>
                     </div>
@@ -339,7 +339,7 @@
                 </div>
 
                 <!-- Version Control -->
-                <div class="expertise-item" data-target="#modal-version-control">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 expertise-item" data-target="#modal-version-control">
                     <div class="icon">
                         <i class="fab fa-github"></i>
                     </div>
@@ -348,7 +348,7 @@
                 </div>
 
                 <!-- Tools & Frameworks -->
-                <div class="expertise-item" data-target="#modal-tools-frameworks">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 expertise-item" data-target="#modal-tools-frameworks">
                     <div class="icon">
                         <i class="fab fa-windows"></i>
                     </div>
@@ -357,7 +357,7 @@
                 </div>
 
                 <!-- Responsive Design -->
-                <div class="expertise-item" data-target="#modal-responsive-design">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 expertise-item" data-target="#modal-responsive-design">
                     <div class="icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
@@ -366,7 +366,7 @@
                 </div>
 
                 <!-- Deployment -->
-                <div class="expertise-item" data-target="#modal-deployment">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 expertise-item" data-target="#modal-deployment">
                     <div class="icon">
                         <i class="fas fa-cloud-upload-alt"></i>
                     </div>
@@ -375,7 +375,7 @@
                 </div>
 
                 <!-- Problem-Solving -->
-                <div class="expertise-item" data-target="#modal-problem-solving">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 expertise-item" data-target="#modal-problem-solving">
                     <div class="icon">
                         <i class="fas fa-search"></i>
                     </div>
@@ -387,6 +387,7 @@
     </section>
 
     <!-- Modal Structure for each expertise -->
+
     <div id="modal-front-end" class="expertise-modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -394,8 +395,25 @@
                 <i class="fab fa-angular modal-icon"></i>
                 <h3>Front-End Development</h3>
             </div>
-            <p>Detailed information about Front-End Development, including the technologies used and how I apply them to
-                real-world projects.</p>
+            <p><strong>Angular, HTML, CSS, JavaScript, Bootstrap, jQuery</strong>. Expertise in:
+            <ul>
+                <li><strong>Angular</strong>: Building <strong>scalable, single-page applications (SPAs)</strong> with a
+                    focus on component-based architecture, two-way data binding, and dependency injection.</li>
+                <li><strong>HTML5</strong>: Crafting <strong>semantic and accessible web pages</strong> using modern
+                    HTML standards for enhanced SEO and user experience.</li>
+                <li><strong>CSS3</strong>: Developing <strong>responsive, visually appealing layouts</strong> using
+                    advanced CSS techniques such as Flexbox, Grid, and CSS animations.</li>
+                <li><strong>JavaScript (ES6+)</strong>: Implementing <strong>dynamic, interactive features</strong>
+                    using modern JavaScript, including asynchronous programming (Promises, async/await), DOM
+                    manipulation, and event-driven programming.</li>
+                <li><strong>Bootstrap</strong>: Utilizing the <strong>Bootstrap framework</strong> for rapid development
+                    of responsive, mobile-first designs with a comprehensive grid system and pre-designed UI components.
+                </li>
+                <li><strong>jQuery</strong>: Simplifying <strong>DOM manipulation and event handling</strong> with a
+                    fast, concise JavaScript library, while also utilizing its plugins for extended functionality.</li>
+            </ul>
+            </p>
+
         </div>
     </div>
 
@@ -407,8 +425,26 @@
                     class="vscode-icon">
                 <h3>Back-End Development</h3>
             </div>
-            <p>Detailed information about Back-End Development, including .NET Core, Web API, and how I use them to
-                build robust applications.</p>
+            <p><strong>Back-End Development</strong> expertise in:
+            <ul>
+                <li><strong>.NET Core</strong>: Building <strong>high-performance, cross-platform applications</strong>
+                    with a modular and lightweight framework that supports cloud-based, scalable solutions.</li>
+                <li><strong>Web API</strong>: Designing and implementing <strong>RESTful APIs</strong> using .NET Core
+                    for seamless communication between front-end clients and back-end services, ensuring data security,
+                    scalability, and efficient data handling.</li>
+                <li><strong>Entity Framework</strong>: Utilizing <strong>ORM (Object-Relational Mapping)</strong> to
+                    simplify database access, enabling <strong>LINQ-based queries</strong> and efficient data handling
+                    in complex applications.</li>
+                <li><strong>C#</strong>: Writing clean, maintainable, and efficient code with a focus on
+                    <strong>object-oriented programming principles</strong> for creating reusable and scalable
+                    components.
+                </li>
+                <li><strong>Authentication & Authorization</strong>: Implementing secure authentication protocols like
+                    <strong>JWT (JSON Web Tokens)</strong> to protect APIs and control access to sensitive data.
+                </li>
+            </ul>
+            </p>
+
         </div>
     </div>
     <!-- Database Modal -->
@@ -419,7 +455,18 @@
                 <i class="fas fa-database modal-icon"></i>
                 <h3>Database</h3>
             </div>
-            <p>SQL Server, LINQ. Database technologies for managing data and queries.</p>
+            <p><strong>SQL Server, LINQ</strong>. Expertise in:
+            <ul>
+                <li><strong>Designing, managing, and optimizing relational databases</strong> with SQL Server</li>
+                <li>Utilizing <strong>advanced queries, stored procedures, and performance tuning techniques</strong>
+                    for optimal database performance</li>
+                <li>Proficient in <strong>LINQ</strong> for querying and manipulating data in a type-safe, efficient
+                    manner</li>
+                <li>Leveraging <strong>object-relational mapping (ORM)</strong> for seamless integration between
+                    databases and .NET applications</li>
+            </ul>
+            </p>
+
         </div>
     </div>
 
@@ -443,7 +490,23 @@
                 <i class="fab fa-windows modal-icon"></i>
                 <h3>Tools & Frameworks</h3>
             </div>
-            <p>Visual Studio, Postman, npm, Node.js. Development tools and frameworks.</p>
+            <p><strong>Development Tools & Frameworks</strong> expertise in:
+            <ul>
+                <li><strong>Visual Studio</strong>: Integrated development environment (IDE) for building, debugging,
+                    and deploying applications with robust tools for <strong>code refactoring, IntelliSense, and version
+                        control integration</strong>.</li>
+                <li><strong>Postman</strong>: Powerful API testing tool for <strong>designing, documenting, and
+                        automating API workflows</strong> to ensure efficient communication between services and client
+                    applications.</li>
+                <li><strong>npm</strong> (Node Package Manager): Managing <strong>JavaScript packages and
+                        dependencies</strong> in large-scale projects, allowing streamlined development workflows and
+                    efficient version control.</li>
+                <li><strong>Node.js</strong>: A powerful back-end JavaScript runtime environment for <strong>building
+                        scalable network applications</strong>, known for its non-blocking, event-driven architecture.
+                </li>
+            </ul>
+            </p>
+
         </div>
     </div>
 
@@ -455,7 +518,18 @@
                 <i class="fas fa-mobile-alt modal-icon"></i>
                 <h3>Responsive Design</h3>
             </div>
-            <p>Bootstrap Grid System. Building responsive layouts for different devices.</p>
+            <p><strong>Bootstrap Grid System</strong>: A powerful framework for building <strong>responsive and flexible
+                    layouts</strong> that adapt seamlessly to different screen sizes and devices. Utilizes a
+                <strong>12-column grid system</strong>, ensuring consistency and scalability in design. Key features
+                include:
+            <ul>
+                <li><strong>Responsive breakpoints</strong> for mobile, tablet, and desktop views.</li>
+                <li>Efficient layout management with <strong>predefined classes</strong> for columns, rows, and
+                    containers.</li>
+                <li>Supports <strong>fluid and fixed-width layouts</strong> to handle various design requirements.</li>
+            </ul>
+            </p>
+
         </div>
     </div>
 
@@ -467,7 +541,16 @@
                 <i class="fas fa-cloud-upload-alt modal-icon"></i>
                 <h3>Deployment</h3>
             </div>
-            <p>GitHub Pages. Deploying web applications for public access.</p>
+            <p><strong>GitHub Pages</strong>: A convenient and free platform for <strong>deploying static web
+                    applications</strong>, making them publicly accessible. Key features include:
+            <ul>
+                <li><strong>Seamless integration</strong> with GitHub repositories for automated deployment.</li>
+                <li>Supports <strong>custom domain names</strong> and SSL certificates for secure access.</li>
+                <li>Simple version control, allowing easy updates and rollbacks.</li>
+                <li>Ideal for hosting <strong>personal websites, documentation, and project portfolios</strong>.</li>
+            </ul>
+            </p>
+
         </div>
     </div>
 
@@ -479,30 +562,68 @@
                 <i class="fas fa-search modal-icon"></i>
                 <h3>Problem-Solving</h3>
             </div>
-            <p>Analytical troubleshooting skills for identifying and solving issues efficiently.</p>
+            <p><strong>Analytical troubleshooting skills</strong> for <strong>identifying and solving complex
+                    issues</strong> efficiently. Key aspects include:
+            <ul>
+                <li>Expertise in <strong>root cause analysis</strong> to pinpoint underlying problems.</li>
+                <li>Proficient in <strong>diagnostic techniques</strong> to quickly isolate faults in code and systems.
+                </li>
+                <li>Utilizing <strong>logical and methodical approaches</strong> to streamline issue resolution.</li>
+                <li>Strong ability to <strong>optimize performance</strong> and improve functionality based on insights.
+                </li>
+            </ul>
+            </p>
+
         </div>
     </div>
 
     <!-- Resume Section -->
     <section id="resume" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4" style="color: #007bff;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);">Resume (CV)
-            </h2>
+            <h2 class="text-center mb-4" style="color: #007bff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);">Resume
+                (CV)</h2>
+
+            <!-- Scrollable Image Selection -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-10">
+                    <div class="scrollable-images">
+                        <!-- Resume Image 1 -->
+                        <img src="Image/downloadresume.png" class="resume-img" alt="Resume 1" data-pdf="">
+
+                        <!-- Resume Image 2 -->
+                        <img src="Image/resume 1.png" class="resume-img" alt="Resume 2" data-pdf="">
+
+                        <!-- Resume Image 3 -->
+                        <img src="Image/resume 2.png" class="resume-img" alt="Resume 3" data-pdf="">
+                        <!-- Resume Image 3 -->
+                        <img src="Image/resume 3.png" class="resume-img" alt="Resume 3" data-pdf="">
+                        <!-- Resume Image 3 -->
+                        <img src="Image/resume 4.png" class="resume-img" alt="Resume 3" data-pdf="">
+                        <!-- Resume Image 3 -->
+                        <img src="Image/resume 5.png" class="resume-img" alt="Resume 3" data-pdf="">
+                        <img src="Image/resume 6.png" class="resume-img" alt="Resume 3" data-pdf="">
+                        <!-- Add more images as necessary -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Display Selected Resume -->
             <div class="row justify-content-center">
                 <div class="col-md-10 text-center bg-light p-4 rounded shadow-sm">
-                    <!-- Display Resume -->
-                    <iframe src="Image/My Resume New.pdf" width="100%" height="500px"
+                    <!-- Iframe to display selected resume -->
+                    <iframe id="resume-preview" src="" width="100%" height="500px"
                         style="border: 2px solid #007bff; border-radius: 8px;"></iframe>
 
                     <!-- Download Button -->
-                    <a href="Image/My Resume New.pdf" class="btn btn-primary mt-4 px-5 py-2" download=""
-                        style="font-size: 18px;">
+                    <a id="download-btn" href="" class="btn btn-primary mt-4 px-5 py-2" style="font-size: 18px;"
+                        download="">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-5">
@@ -540,7 +661,6 @@
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer class="py-4 bg-dark text-white text-center">
         <div class="container">
@@ -567,12 +687,15 @@
 
     <script src="script.js"></script>
     <script src="SendMsg.js"></script>
+    <script src="scrolling.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- SweetAlert JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-
+    <!-- jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="pdf.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

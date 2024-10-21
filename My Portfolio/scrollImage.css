@@ -1,0 +1,23 @@
+.scrollable-images {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 0;
+}
+
+.scrollable-images img {
+    height: 150px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.scrollable-images img:hover {
+    transform: scale(1.05);
+}
+
+.scrollable-images img.selected {
+    border-color: #007bff;
+    transform: scale(1.1);
+}
