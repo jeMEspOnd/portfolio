@@ -223,3 +223,177 @@ footer {
     font-size: 0.75rem;
     /* Font size */
 }
+
+
+/* Technical Expertise Section (Updated) */
+/* General Technical Expertise Section Styling */
+#technical-expertise {
+    padding: 60px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 60px;
+}
+
+#technical-expertise h2 {
+    color: #007bff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Expertise Item Grid */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.expertise-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.expertise-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.expertise-item h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.expertise-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Icon Styling */
+.expertise-item .icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.expertise-item:hover .icon {
+    color: #1e90ff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #technical-expertise h2 {
+        font-size: 2rem;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .expertise-item {
+        padding: 15px;
+    }
+
+    .expertise-item h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Visual Studio Logo */
+/* Basic modal styles */
+.expertise-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+    overflow: auto;
+    /* Enable scroll if needed */
+    padding-top: 60px;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal header (with icon) */
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+/* Modal title */
+.modal-header h3 {
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal icon */
+.modal-icon {
+    font-size: 40px;
+    color: #007bff;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.close-btn:hover {
+    color: #ff0000;
+}
+
+/* Modal content text */
+.modal-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}

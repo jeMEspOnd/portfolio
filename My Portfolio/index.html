@@ -37,6 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technical-expertise">Technical Experties</a>
+                    </li>
                     <li class="nav-item"></li>
                     <a class="nav-link" href="#resume">Resume</a>
                     </li>
@@ -195,7 +198,8 @@
                         <span class="badge badge-primary position-absolute top-0 end-0 m--1">Primary</span>
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="skill-title mb-2">.NET Core</h5>
-                            <i class="fas fa-code fa-2x text-secondary"></i>
+                            <img src="Image/Visual-Studio-Logo-2019.png" height="30px" width="50px" alt="VS Code Logo"
+                                class="vscode-icon">
                         </div>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="90"
@@ -301,6 +305,183 @@
         </div>
     </section>
 
+    <!-- Technical Expertise Section -->
+    <section id="technical-expertise" class="technical-expertise">
+        <div class="container">
+            <h2>Technical Expertise</h2>
+            <div class="expertise-grid">
+                <!-- Front-End Development -->
+                <div class="expertise-item" data-target="#modal-front-end">
+                    <div class="icon">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <h3>Front-End Development</h3>
+                    <p>Angular, HTML, CSS, JavaScript, Bootstrap, jQuery</p>
+                </div>
+
+                <!-- Back-End Development -->
+                <div class="expertise-item" data-target="#modal-back-end">
+                    <div class="icon">
+                        <img src="Image/Visual-Studio-Logo-2019.png" height="50px" width="80px" alt="VS Code Logo"
+                            class="vscode-icon">
+                    </div>
+                    <h3>Back-End Development</h3>
+                    <p>.NET Core, Web API, C#, Entity Framework</p>
+                </div>
+
+                <!-- Database -->
+                <div class="expertise-item" data-target="#modal-database">
+                    <div class="icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <p>SQL Server, LINQ</p>
+                </div>
+
+                <!-- Version Control -->
+                <div class="expertise-item" data-target="#modal-version-control">
+                    <div class="icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Version Control</h3>
+                    <p>Git, GitHub, GitLab</p>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="expertise-item" data-target="#modal-tools-frameworks">
+                    <div class="icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <h3>Tools & Frameworks</h3>
+                    <p>Visual Studio, Postman, npm, Node.js</p>
+                </div>
+
+                <!-- Responsive Design -->
+                <div class="expertise-item" data-target="#modal-responsive-design">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Bootstrap Grid System</p>
+                </div>
+
+                <!-- Deployment -->
+                <div class="expertise-item" data-target="#modal-deployment">
+                    <div class="icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Deployment</h3>
+                    <p>GitHub Pages</p>
+                </div>
+
+                <!-- Problem-Solving -->
+                <div class="expertise-item" data-target="#modal-problem-solving">
+                    <div class="icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Problem-Solving</h3>
+                    <p>Analytical troubleshooting skills for identifying and solving issues</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure for each expertise -->
+    <div id="modal-front-end" class="expertise-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <i class="fab fa-angular modal-icon"></i>
+                <h3>Front-End Development</h3>
+            </div>
+            <p>Detailed information about Front-End Development, including the technologies used and how I apply them to
+                real-world projects.</p>
+        </div>
+    </div>
+
+    <div id="modal-back-end" class="expertise-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <img src="Image/Visual-Studio-Logo-2019.png" height="38px" width="60px" alt="VS Code Logo"
+                    class="vscode-icon">
+                <h3>Back-End Development</h3>
+            </div>
+            <p>Detailed information about Back-End Development, including .NET Core, Web API, and how I use them to
+                build robust applications.</p>
+        </div>
+    </div>
+    <!-- Database Modal -->
+    <div id="modal-database" class="expertise-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-database modal-icon"></i>
+                <h3>Database</h3>
+            </div>
+            <p>SQL Server, LINQ. Database technologies for managing data and queries.</p>
+        </div>
+    </div>
+
+    <!-- Version Control Modal -->
+    <div id="modal-version-control" class="expertise-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <i class="fab fa-github modal-icon"></i>
+                <h3>Version Control</h3>
+            </div>
+            <p>Git, GitHub, GitLab. Source code management and collaboration tools.</p>
+        </div>
+    </div>
+
+    <!-- Tools & Frameworks Modal -->
+    <div id="modal-tools-frameworks" class="expertise-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <i class="fab fa-windows modal-icon"></i>
+                <h3>Tools & Frameworks</h3>
+            </div>
+            <p>Visual Studio, Postman, npm, Node.js. Development tools and frameworks.</p>
+        </div>
+    </div>
+
+    <!-- Responsive Design Modal -->
+    <div id="modal-responsive-design" class="expertise-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-mobile-alt modal-icon"></i>
+                <h3>Responsive Design</h3>
+            </div>
+            <p>Bootstrap Grid System. Building responsive layouts for different devices.</p>
+        </div>
+    </div>
+
+    <!-- Deployment Modal -->
+    <div id="modal-deployment" class="expertise-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-cloud-upload-alt modal-icon"></i>
+                <h3>Deployment</h3>
+            </div>
+            <p>GitHub Pages. Deploying web applications for public access.</p>
+        </div>
+    </div>
+
+    <!-- Problem-Solving Modal -->
+    <div id="modal-problem-solving" class="expertise-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-search modal-icon"></i>
+                <h3>Problem-Solving</h3>
+            </div>
+            <p>Analytical troubleshooting skills for identifying and solving issues efficiently.</p>
+        </div>
+    </div>
 
     <!-- Resume Section -->
     <section id="resume" class="py-5">

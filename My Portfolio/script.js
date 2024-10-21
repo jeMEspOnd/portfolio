@@ -105,6 +105,34 @@ window.addEventListener('load', function () {
 });
 
 
+// Function to open modal
+const expertiseItems = document.querySelectorAll('.expertise-item');
+expertiseItems.forEach(item => {
+    item.addEventListener('click', function () {
+        const targetModal = document.querySelector(this.getAttribute('data-target'));
+        targetModal.style.display = 'block';
+    });
+});
+
+// Function to close modal
+const closeButtons = document.querySelectorAll('.close-btn');
+closeButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const modal = this.closest('.expertise-modal');
+        modal.style.display = 'none';
+    });
+});
+
+// Close modal when clicking outside of it
+window.addEventListener('click', function (event) {
+    const modals = document.querySelectorAll('.expertise-modal');
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
 
 
 
