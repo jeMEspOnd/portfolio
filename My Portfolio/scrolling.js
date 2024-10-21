@@ -91,7 +91,12 @@ document.getElementById('download-btn').addEventListener('click', function (even
     // Check if the href is empty or null
     if (!href || href.trim() === '') {
         event.preventDefault(); // Prevent the default action if href is empty or null
-        swal("", "Download is not available yet.", "warning"); // Optional alert to inform the user
+        swal({
+            title: "",
+            text: "Please select your resume template!",
+            icon: "warning",
+            button: "OK"
+        });
     }
 });
 
